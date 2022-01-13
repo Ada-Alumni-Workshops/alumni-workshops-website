@@ -1,2 +1,3 @@
-# alumni-workshops-website
-Website 
+# Ada Alumni Workshops Website
+
+Future website for the alumni workshops.
