@@ -5,6 +5,7 @@ module.exports = {
     description: "A site to host workshops for Ada Developers Academy Alumni",
     image: "placeholder_image.png",
   },
+  pathPrefix: "/alumni-workshops-website",
   plugins: [
     {
       resolve: "gatsby-plugin-google-analytics",
