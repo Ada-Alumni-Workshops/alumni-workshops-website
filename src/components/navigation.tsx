@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import * as styles from '../styles/navigation.module.css';
 
@@ -14,7 +14,14 @@ type NavigationProps = {
 }
 
 const Navigation: React.FC<NavigationProps> = ({sites}) => {
-    const [active, setActive] = useState<boolean>(window.innerWidth > 620);
+    const [active, setActive] = useState<boolean>(false);
+
+    useEffect(() => {
+        if (window !== undefined) {
+            setActive(window.innerWidth > 620);
+        }
+    }, []);
+
     const siteMenuItems = sites.map((site) => {
         return <li key={site.name}>
             <Link to={site.url}>{site.name}</Link>
