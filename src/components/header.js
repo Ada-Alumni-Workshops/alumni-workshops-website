@@ -5,14 +5,14 @@ import Navigation from "./navigation";
 import menuItems from "../navigation.json";
 import * as styles from "../styles/header.module.css";
 
-const Header = ({ metadata }) => {
+const Header = (props) => {
   return (
     <header>
       <div>
         <Link to="/">
           <StaticImage
             src="../images/ada_logo.png"
-            alt={metadata.description}
+            alt={props.description}
             width={610}
             className={styles.logoImage}
           />

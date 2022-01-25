@@ -1,38 +1,52 @@
 import * as React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
+
 import Layout from "../components/layout";
-import { StaticImage } from "gatsby-plugin-image";
+import CardList from "../components/card_list";
 
 const UpcomingWorkshops = () => {
   const data = useStaticQuery(graphql`
-    query GetWorkshopsFullList {
-      allMdx(sort: { fields: frontmatter___date }) {
+    query GetWorkshops {
+      allMdx(
+        sort: { fields: frontmatter___date, order: DESC }
+        filter: { frontmatter: { type: { eq: "workshop" } } }
+      ) {
         nodes {
+          id
           frontmatter {
-            date(formatString: "YYYYY-MM-DD")
+            date(formatString: "YYYY-MM-DD")
             description
             image {
               publicURL
             }
-            title
             repo
+            title
+            type
           }
-          id
           slug
         }
       }
     }
   `);
 
-  const workshopMarkUp = data.allMdx.nodes.map((node) => {
-    return (
-      <div key={node.id}>
-        <h2>
-          <Link to={node.slug}>{node.frontmatter.title}</Link>
-        </h2>
-        <p>{node.frontmatter.description}</p>
-      </div>
-    );
+  console.log(data.allMdx.nodes);
+
+  const cardData = data.allMdx.nodes.map((node) => {
+    return {
+      id: node.id,
+      type: node.frontmatter.type,
+      title: node.frontmatter.title,
+      repo: node.frontmatter.repo,
+      date: node.frontmatter.date,
+      description: node.frontmatter.description,
+      slug: node.slug,
+      image: (
+        <img
+          src={node.frontmatter.image.publicURL}
+          alt={node.frontmatter.title}
+        />
+      ),
+    };
   });
 
   return (
@@ -46,7 +60,9 @@ const UpcomingWorkshops = () => {
         </p>
         <article>
           <h2>Upcoming Workshops</h2>
-          <section className="workshops">{workshopMarkUp}</section>
+          <section className="workshops">
+            <CardList cardData={cardData} />
+          </section>
         </article>
       </Layout>
     </>

@@ -1,35 +1,36 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
-import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-    query GetWorkshops {
-      allMdx(sort: { fields: frontmatter___date }) {
+    query GetBlogPosts {
+      allMdx(
+        filter: { frontmatter: { type: { eq: "blog-post" } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
         nodes {
           frontmatter {
-            date(formatString: "YYYYY-MM-DD")
+            date
             description
             image {
               publicURL
             }
+            type
             title
             repo
           }
-          id
-          slug
         }
       }
     }
   `);
 
-  const workshopMarkUp = data.allMdx.nodes.map((node) => {
+  const newsMarkUp = data.allMdx.nodes.map((node) => {
     return (
       <div key={node.id}>
-        <h2>
+        <h3>
           <Link to={node.slug}>{node.frontmatter.title}</Link>
-        </h2>
+        </h3>
         <p>{node.frontmatter.description}</p>
       </div>
     );
@@ -45,8 +46,8 @@ const IndexPage = () => {
           advancement, and personal development.
         </p>
         <article>
-          <h2>Upcoming Workshops</h2>
-          <section className="workshops">{workshopMarkUp}</section>
+          <h2>Lovelace Learning Labs News</h2>
+          <section className="news">{newsMarkUp}</section>
         </article>
       </Layout>
     </>
