@@ -5,7 +5,7 @@ module.exports = {
     description: "A site to host workshops for Ada Developers Academy Alumni",
     image: "/images/ada_logo.png",
   },
-  pathPrefix: "/alumni-workshops-website",
+  // pathPrefix: "/alumni-workshops-website",
   plugins: [
     {
       resolve: "gatsby-plugin-google-analytics",
