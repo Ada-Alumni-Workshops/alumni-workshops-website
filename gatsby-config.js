@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ada Alumni Workshops`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://lll.adadev.org`,
     description: "A site to host workshops for Ada Developers Academy Alumni",
     image: "/images/ada_logo.png",
   },
