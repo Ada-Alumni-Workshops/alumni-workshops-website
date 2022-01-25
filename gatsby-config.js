@@ -3,7 +3,7 @@ module.exports = {
     title: `Ada Alumni Workshops`,
     siteUrl: `https://www.yourdomain.tld`,
     description: "A site to host workshops for Ada Developers Academy Alumni",
-    image: "placeholder_image.png",
+    image: "/images/ada_logo.png",
   },
   pathPrefix: "/alumni-workshops-website",
   plugins: [
@@ -67,9 +67,23 @@ module.exports = {
       __key: "workshops",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blogs",
+        path: "./src/blog/",
+      },
+      __key: "blog",
+    },
+    {
       resolve: "gatsby-plugin-page-creator",
       options: {
         path: `${__dirname}/src/workshops`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/blog`,
       },
     },
   ],
