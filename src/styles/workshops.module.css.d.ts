@@ -2,3 +2,4 @@
 export const cards: string;
 export const card: string;
 export const text: string;
+export const dateText: string;

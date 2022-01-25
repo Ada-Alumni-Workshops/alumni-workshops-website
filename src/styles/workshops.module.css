@@ -30,3 +30,8 @@
 .card:nth-child(1) {
   width: 420px;
 }
+
+.date-text {
+  font-size: 0.8rem;
+  color: var(--grey);
+}
