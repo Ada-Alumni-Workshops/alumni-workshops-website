@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@700&display=swap");
+
 :root {
   --black: #333;
   --blue: #5290f9;
@@ -59,6 +61,11 @@ p {
 ::selection {
   background-color: var(--orange);
   color: var(--white);
+}
+
+article li {
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 
 .container {
