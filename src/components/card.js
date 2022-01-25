@@ -1,5 +1,5 @@
 import * as React from "react";
-import { card, text } from "../styles/workshops.module.css";
+import { card, text, dateText } from "../styles/workshops.module.css";
 import { Link } from "gatsby";
 
 const Card = ({ cardData }) => {
@@ -9,8 +9,11 @@ const Card = ({ cardData }) => {
       <Link to={`/${cardData.slug}`}>{cardData.image}</Link>
       <div className={text}>
         <h3>
-          <Link to={cardData.slug}>{cardData.title}</Link>
+          <Link to={cardData.slug}>{cardData.title}</Link>{" "}
         </h3>
+        <h4>
+          <span className={dateText}>{cardData.date}</span>
+        </h4>
         <p>{cardData.description}</p>
       </div>
     </article>
