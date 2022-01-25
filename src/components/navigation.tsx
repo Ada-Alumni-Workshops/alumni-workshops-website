@@ -16,12 +16,6 @@ type NavigationProps = {
 const Navigation: React.FC<NavigationProps> = ({sites}) => {
     const [active, setActive] = useState<boolean>(false);
 
-    useEffect(() => {
-        if (window !== undefined) {
-            setActive(window.innerWidth > 620);
-        }
-    }, []);
-
     const siteMenuItems = sites.map((site) => {
         return <li key={site.name}>
             <Link to={site.url}>{site.name}</Link>
