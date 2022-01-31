@@ -8,7 +8,7 @@ const UpcomingWorkshops = () => {
   const data = useStaticQuery(graphql`
     query GetWorkshops {
       allMdx(
-        sort: { fields: frontmatter___date, order: DESC }
+        sort: { fields: frontmatter___date, order: ASC }
         filter: { frontmatter: { type: { eq: "workshop" } } }
       ) {
         nodes {
