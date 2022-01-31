@@ -83,3 +83,12 @@ article li {
 .container > div {
   margin: 0 15px;
 }
+
+img.gatsby-resp-image-image[alt*="thumbnail"] {
+  border-radius: 20%;
+}
+
+li {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
