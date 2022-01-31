@@ -9,7 +9,7 @@ const Card = ({ cardData }) => {
       <Link to={`/${cardData.slug}`}>{cardData.image}</Link>
       <div className={text}>
         <h3>
-          <Link to={cardData.slug}>{cardData.title}</Link>{" "}
+          <Link to={`/${cardData.slug}`}>{cardData.title}</Link>
         </h3>
         <h4>
           <span className={dateText}>{cardData.date}</span>
