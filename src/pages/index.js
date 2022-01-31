@@ -20,6 +20,7 @@ const IndexPage = () => {
             title
             repo
           }
+          slug
         }
       }
     }
@@ -29,7 +30,7 @@ const IndexPage = () => {
     return (
       <div key={node.id}>
         <h3>
-          <Link to={node.slug}>{node.frontmatter.title}</Link>
+          <Link to={`/${node.slug}`}>{node.frontmatter.title}</Link>
         </h3>
         <p>{node.frontmatter.description}</p>
       </div>
