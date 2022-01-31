@@ -37,6 +37,7 @@ module.exports = {
         ],
         defaultLayouts: {
           workshops: require.resolve("./src/components/workshop-layout.js"),
+          blogs: require.resolve("./src/components/workshop-layout.js"),
         },
       },
     },
