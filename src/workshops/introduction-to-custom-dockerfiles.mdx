@@ -1,21 +1,30 @@
 ---
 date: 2022-03-26
-title: An Illustrated & Hands-On Intro to Containers and Kubernetes on Google Cloud
-description: This workshop will go over what containers are and why they matter to you as a technologist/developer, and to companies as a key part of running their businesses.
-image: "../images/kaslin-fields.jpeg"
+title: Introduction to custom dockerfiles
+description: This session should provide an introduction to the most common and useful Dockerfile syntax and tools.
+image: "../images/sierra-soleil.jpg"
 type: workshop
 ---
 
-# An Illustrated & Hands-On Intro to Containers and Kubernetes on Google Cloud
+# Introduction to custom dockerfiles
 
 ## TBD
 
-Since 2014, adoption of container technology and Kubernetes has quickly spread across large and small businesses alike. The pervasiveness and flexibility of these tools has made a strong understanding of containers and Kubernetes essential in any technical practitioner’s toolbox. This workshop will go over what containers are and why they matter to _you_ as a technologist/developer, and to _companies_ as a key part of running their businesses.
+This session should provide an introduction to the most common and useful Dockerfile syntax and tools.
 
-Kubernetes contributor, CNCF Ambassador, and Google Cloud Developer Advocate Kaslin Fields will go over the uses of containers as a packaging and isolation mechanism for applications, and how Kubernetes enables use of containers at the scale needed to run a business. All using a fun, illustrated cookie analogy! Beyond discussing the basics, you’ll get hands-on with running applications in containers on Kubernetes using Google Cloud.
+Topics will include:
 
-## Kaslin Fields
+- The basic Dockerfile directives FROM, COPY, ADD, RUN, WORKDIR, EXPOSE, USER, LABEL, ARG, ENV
+- Using image repos
+- ENTRYPOINT vs CMD
+- Managing layers
+- Named and Multistage Builds
+- Common deployment scenarios
 
-Kaslin Fields is a Developer Advocate at Google Cloud, a Cloud Native Computing Foundation (CNCF) Ambassador, and a contributor to Open Source Kubernetes. As a Developer Advocate, she engages with Open Source and technical practitioner communities both as a member, and as an advocate for their needs in the development of Google Cloud's products. She is passionate about making technology accessible to a broad audience through making the information available in many forms, such as videos, blogs, documentation, and even comics which she illustrates herself!
+The goal will be to demonstrate the use of the above using scenarios that I encounter on a regular basis. The format of the session will be lab-style, where students will be able to run the builds themselves and examine the output. The ultimate goal will be to show some good patterns and best practices for producing better custom dockerfiles.
 
-![Kaslin Fields thumbnail](../images/kaslin-fields-avatar.png)
+## Sierra Soleil
+
+I work as a DevOps Engineer for Crystal Dynamics, a video game studio. I specialize in building and maintaining kubernetes-based services used by both players and internal developers.
+
+![Sierra Soleil thumbnail](../images/sierra-soleil.jpg)
