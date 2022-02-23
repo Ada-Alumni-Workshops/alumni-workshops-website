@@ -12,7 +12,9 @@ const Card = ({ cardData }) => {
           <Link to={`/${cardData.slug}`}>{cardData.title}</Link>
         </h3>
         <h4>
-          <span className={dateText}>{cardData.date}</span>
+          <span className={dateText}>
+            {cardData.date ? cardData.date : "TBD"}
+          </span>
         </h4>
         <p>{cardData.description}</p>
       </div>
