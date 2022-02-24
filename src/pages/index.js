@@ -2,6 +2,27 @@ import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 
+const SignupForm = () => {
+  const now = new Date();
+  const opening = new Date("February 25, 2022 11:55:00 PST");
+  if (now.getTime() < opening.getTime()) {
+    return "";
+  } else {
+    return (
+      <article>
+        <h2>Registration</h2>
+        <iframe
+          src="https://www.tfaforms.com/4964203"
+          height="800"
+          width="800"
+          frameborder="0"
+        ></iframe>
+        <script src="//tfaforms.com/js/iframe_resize_helper.js"></script>
+      </article>
+    );
+  }
+};
+
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query GetBlogPosts {
@@ -46,6 +67,7 @@ const IndexPage = () => {
           for the Ada alum community, focusing on technical skills, career
           advancement, and personal development.
         </p>
+        <SignupForm />
         <article>
           <h2>Lovelace Learning Labs News</h2>
           <section className="news">{newsMarkUp}</section>
