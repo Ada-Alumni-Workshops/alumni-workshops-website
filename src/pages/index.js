@@ -13,7 +13,7 @@ const SignupForm = () => {
         <h2>Registration</h2>
         <iframe
           src="https://www.tfaforms.com/4964203"
-          height="800"
+          height="1100"
           width="800"
           frameborder="0"
         ></iframe>
