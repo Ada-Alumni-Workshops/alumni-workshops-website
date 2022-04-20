@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-workshops-survey-of-frontend-architecture-mdx",
+    "path": "/survey-of-frontend-architecture/",
+    "result": {"pageContext":{"frontmatter":{"date":"2022-03-23T00:00:00.000Z","title":"Survey of Frontend Architectures","description":"In this session, you’ll find a high-level introduction to frontend architecture patterns, learning what approach to take given a set of requirements.","image":"../images/nina-mutty.jpeg","type":"workshop"}}},
+    "staticQueryHashes": ["1642819152","1978354112"]}

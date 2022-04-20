@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-workshops-advanced-oo-design-patterns-p-2-mdx",
+    "path": "/advanced-oo-design-patterns-p2/",
+    "result": {"pageContext":{"frontmatter":{"date":"2022-05-19T00:00:00.000Z","title":"Part 2 Advanced Object Oriented Design Patterns","description":"In this latest addition to the Patterns in Programming workshop series, we'll focus on design patterns, with a focus on object-oriented design. We'll dive into a set of common and useful design patterns outlined in the famous book, Design Patterns, by the Gang of Four (Gamma et al.), which also serve as shorthand terms that engineers use to name and describe their code. This is part 2 of a 2-part workshop!","image":"../images/Noam-Chitayat.png","type":"workshop"}}},
+    "staticQueryHashes": ["1642819152","1978354112"]}

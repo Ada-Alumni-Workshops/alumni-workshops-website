@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-workshops-introduction-to-redis-mdx",
+    "path": "/introduction-to-redis/",
+    "result": {"pageContext":{"frontmatter":{"date":"2022-04-14T00:00:00.000Z","title":"Introduction to Redis","description":"This session will serve as a practical introduction to Redis, a common distributed in-memory data store.","image":"../images/dan-roberts.png","type":"workshop"}}},
+    "staticQueryHashes": ["1642819152","1978354112"]}

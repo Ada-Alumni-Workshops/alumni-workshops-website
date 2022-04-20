@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-blog-spring-2022-coming-mdx",
+    "path": "/spring_2022_coming/",
+    "result": {"pageContext":{"frontmatter":{"date":"2022-01-24T00:00:00.000Z","title":"Spring 2022 Learning Labs Coming","description":"We will be beginning our Spring session for Lovelace Learning Labs soon.  Currently we are soliciting ideas for workshops.","image":"../images/chris.jpg","repo":"https://github.com/Ada-Alumni-Workshops/intro-to-docker","type":"blog-post"}}},
+    "staticQueryHashes": ["1642819152","1978354112"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-workshops-concurrency-mdx",
+    "path": "/concurrency/",
+    "result": {"pageContext":{"frontmatter":{"date":"2022-04-30T00:00:00.000Z","title":"Concurrency","description":"We will explore the concepts of concurrency and multithreaded programming, and common patterns that we apply. Using some example code projects, we will learn how to make our code multithreaded in order to safely speed up our programs","image":"../images/Noam-Chitayat.png","type":"workshop"}}},
+    "staticQueryHashes": ["1642819152","1978354112"]}

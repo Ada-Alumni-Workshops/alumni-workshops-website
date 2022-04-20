@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-blog-registration-friday-mdx",
+    "path": "/registration_friday/",
+    "result": {"pageContext":{"frontmatter":{"date":"2022-02-23T00:00:00.000Z","title":"Signup Starts Friday at Noon PST","description":"We will open up registration for sessions on Friday February 25th at noon.","image":"../images/chris.jpg","type":"blog-post"}}},
+    "staticQueryHashes": ["1642819152","1978354112"]}

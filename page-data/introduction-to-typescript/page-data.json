@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-workshops-introduction-to-typescript-mdx",
+    "path": "/introduction-to-typescript/",
+    "result": {"pageContext":{"frontmatter":{"date":"2022-05-28T00:00:00.000Z","title":"Introduction to TypeScript","description":"This introductory workshop will get you started writing TypeScript code. You will see the advantages to using static typing to shorten the development cycle, spotting errors earlier in the process.","image":"../images/chris.jpg","type":"workshop"}}},
+    "staticQueryHashes": ["1642819152","1978354112"]}

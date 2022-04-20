@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-workshops-continuous-integration-with-jenkins-mdx",
+    "path": "/continuous-integration-with-jenkins/",
+    "result": {"pageContext":{"frontmatter":{"date":"2022-04-27T00:00:00.000Z","title":"Continuous Integration With Jenkins","description":"Come and learn about Jenkins, one of the most popular continuous integration tools. We'll talk about configuration as code and try to provide attendees with the opportunity to play around with the system.","image":"../images/Kevin-Burnett.jpg","type":"workshop"}}},
+    "staticQueryHashes": ["1642819152","1978354112"]}
