@@ -68,10 +68,6 @@ const IndexPage = () => {
           advancement, and personal development.
         </p>
         <SignupForm />
-        <article>
-          <h2>Lovelace Learning Labs News</h2>
-          <section className="news">{newsMarkUp}</section>
-        </article>
       </Layout>
     </>
   );
